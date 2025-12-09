@@ -53,7 +53,7 @@ async function getDatabaseData(searchCriteria, userInput)
 }
 
 
-http.createServer(function (req, res) {
+const server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   urlObj = url.parse(req.url,true)
   path = urlObj.pathname;
@@ -102,4 +102,9 @@ http.createServer(function (req, res) {
         res.end();
     });
   }
-}).listen(8080);
+})
+
+const PORT = process.env.PORT || 8080;
+server.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
