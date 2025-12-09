@@ -90,7 +90,7 @@ const server = http.createServer(function (req, res) {
             var type = 1;
         }
         const displayData = await getDatabaseData(type,input);
-        if(displayData.lenght > 0)
+        if(displayData.length > 0)
         {
             res.write("<h2>"+displayData[0].name +"</h2>");
             res.write ("<p>The zip codes are:  " + displayData[0].zips +"</p>" );
