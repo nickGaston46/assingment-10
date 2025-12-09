@@ -1,0 +1,17 @@
+{
+  "name": "zipcode-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js server that queries MongoDB and looks up zip codes and cities.",
+  "main": "webApp.js",
+  "scripts": {
+    "start": "node webApp.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "mongodb": "^6.5.0",
+    "qs": "^6.11.0"
+  }
+}
