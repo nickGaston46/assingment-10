@@ -59,7 +59,7 @@ const server = http.createServer(function (req, res) {
   path = urlObj.pathname;
   if (path == "/")
   {
-    file="./homeview.txt";
+    file="./homeView.txt";
     fs.readFile(file, function(err, homeView) {
     res.write(homeView);
     res.end();
