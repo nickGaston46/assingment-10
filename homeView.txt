@@ -1,0 +1,5 @@
+<h2>Please Enter a zip code or a City</h2>
+<form action='/process' method='post'>
+City/ZipCode: <input type='text' name='data'><br />
+<input type='submit'>
+</form>
