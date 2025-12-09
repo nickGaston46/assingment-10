@@ -102,6 +102,11 @@ const server = http.createServer(function (req, res) {
         res.end();
     });
   }
+  else if(path === "/favicon.ico") {
+    res.writeHead(204);
+    res.end();
+    return;
+    }
 })
 
 const PORT = process.env.PORT || 8080;
